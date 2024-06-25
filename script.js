@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const nationality = nationalitySelect.value;
         visaTypeSelect.innerHTML = '<option value="">Select visa type</option>'; // Reset visa types
 
-        if (nationality === 'usa') {
+        if (nationality === 'BANGLADESH') {
             visaTypeSelect.innerHTML += '<option value="tourist">Tourist Visa</option>';
             visaTypeSelect.innerHTML += '<option value="business">Business Visa</option>';
-        } else if (nationality === 'canada') {
+        } else if (nationality === 'INDIA') {
             visaTypeSelect.innerHTML += '<option value="student">Student Visa</option>';
             visaTypeSelect.innerHTML += '<option value="work">Work Visa</option>';
-        } else if (nationality === 'india') {
+        } else if (nationality === 'PAKISTAN') {
             visaTypeSelect.innerHTML += '<option value="tourist">Tourist Visa</option>';
             visaTypeSelect.innerHTML += '<option value="medical">Medical Visa</option>';
         }
