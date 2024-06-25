@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="visa-form">
+        <h1>Visa Application Form</h1>
+        <form id="applicationForm">
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality">
+                <option value="">Select your nationality</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="india">India</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="visaType">Visa Type:</label>
+            <select id="visaType" name="visaType">
+                <option value="">Select visa type</option>
+                <!-- Visa types will be populated based on nationality -->
+            </select>
+
+            <div id="documentChecklist">
+                <!-- Document checklist will be shown here based on visa type -->
+            </div>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="passportNumber">Passport Number:</label>
+            <input type="text" id="passportNumber" name="passportNumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="documents">Upload Documents:</label>
+            <input type="file" id="documents" name="documents" multiple required>
+
+            <button type="submit">Apply Now</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
